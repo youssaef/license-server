@@ -1,0 +1,47 @@
+/* @tailwind base; */
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* خط أساسي وتهيئة اتجاه RTL مع تكبير طفيف للنص */
+html {
+  font-family: "Almarai", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 18px; /* تكبير طفيف ليسهل القراءة لكبار السن */
+  line-height: 1.6; /* ارتفاع سطر مريح للنصوص الطويلة */
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 0.74rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+.card-header {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;            /* محاذاة مرنة للنص داخل الشريط */
+  align-items: center;      /* توسيط عمودي للنص في العنوان */
+  line-height: 1.4;         /* ارتفاع سطر متوازن يمنع التزاحم */
+  border-bottom-width: 1px;
+  border-bottom-color: #f3f4f6;
+  font-weight: 600;
+  color: #000000;
+}
+.card-body { padding: 0.75rem; }
+
+/* نمط مضغوط للحقول لتقليل التباعد */
+.compact-form input,
+.compact-form select,
+.compact-form textarea {
+  padding: 0.3rem 0.5rem !important; /* تقليل الحشو العمودي قليلاً */
+  line-height: 1.25 !important;      /* يضمن تموضع النص جيداً داخل الإطار */
+  box-sizing: border-box;             /* يمنع تجاوز المحتوى حدود الإطار */
+  margin-top: 0.125rem !important;
+}
+.compact-form .grid { gap: 0.5rem !important; }
+
+.compact-form label {
+  display: inline-block;
+  margin-bottom: 0.125rem; /* تقليل المسافة بين التسمية والحقل */
+}
